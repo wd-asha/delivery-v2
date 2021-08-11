@@ -1,0 +1,24 @@
+.tara-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 1rem 2rem 1rem;
+}
+
+.tara-item {
+    width: 50%;
+    padding: .33rem 0;
+    border-bottom: 1px solid rgba(102, 0, 0, .2);
+    color: rgba(102, 0, 0, 1);
+    font-size: 1rem;
+}
+
+@media only screen and (max-width : 1200px) {
+    .tara-box {
+        padding: 0
+                calc(0rem + (1 - 0) * ((100vw - 17.77rem) / (75 - 17.77)))
+                calc(1rem + (2 - 1) * ((100vw - 17.77rem) / (75 - 17.77)))
+                calc(0rem + (1 - 0) * ((100vw - 17.77rem) / (75 - 17.77)));
+    }
+}
+

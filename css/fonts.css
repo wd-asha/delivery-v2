@@ -1,0 +1,70 @@
+@font-face {
+    font-family: 'Akrobat-Regular';
+    src: url('../fonts/Akrobat-Regular.eot');
+    src: local('Akrobat Regular'), local('Akrobat-Regular'),
+    url('../fonts/Akrobat-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Akrobat-Regular.woff') format('woff'),
+    url('../fonts/Akrobat-Regular.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Akrobat-ExtraLight';
+    src: local('Akrobat ExtraLight'), local('Akrobat-ExtraLight');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Akrobat-SemiBold';
+    src: url('../fonts/Akrobat-SemiBold.eot');
+    src: local('Akrobat SemiBold'), local('Akrobat-SemiBold'),
+    url('../fonts/Akrobat-SemiBold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Akrobat-SemiBold.woff') format('woff'),
+    url('../fonts/Akrobat-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Akrobat-Light';
+    src: local('Akrobat Light'), local('Akrobat-Light');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Akrobat-Black';
+    src: url('../fonts/Akrobat-Black.eot');
+    src: local('Akrobat Black'), local('Akrobat-Black'),
+    url('../fonts/Akrobat-Black.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Akrobat-Black.woff') format('woff'),
+    url('../fonts/Akrobat-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Akrobat-Bold';
+    src: local('Akrobat Bold'), local('Akrobat-Bold'),
+    url('../fonts/Akrobat-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Akrobat-Bold.woff') format('woff'),
+    url('../fonts/Akrobat-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Akrobat-Thin';
+    src: local('Akrobat Thin'), local('Akrobat-Thin');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Akrobat-ExtraBold';
+    src: local('Akrobat ExtraBold'), local('Akrobat-ExtraBold');
+    font-weight: 800;
+    font-style: normal;
+}

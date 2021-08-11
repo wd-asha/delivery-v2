@@ -1,0 +1,65 @@
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch;
+    margin: 0 auto 24px auto;
+    max-width: 1200px;
+    padding: 40px 0 0 0;
+}
+
+.content-item {
+    width: 32%;
+    transition: .7s;
+    background-color: rgba(241, 241, 241, 1.0);
+    padding: 40px 40px 40px 40px;
+}
+
+.content-item h3 {
+    font-size: 2em;
+    padding: 0 0 24px 0;
+}
+
+.content-item h3 i {
+    color: rgba(50, 50, 50, 1.0);
+}
+
+.content-item p:nth-child(2) {
+    color: rgba(0, 177, 106, 1.0);
+    padding: 0 0 8px 0;
+}
+
+
+.content-item p:nth-child(even) {
+    color: rgba(0, 177, 106, 1.0);
+    border-top: 1px dashed;
+    margin-top: 16px;
+    padding-top: 16px;
+    padding-bottom: 8px;
+}
+
+.content-item p:nth-child(2) {
+    border: none;
+    padding-top: 0;
+}
+
+.content-item p:nth-child(odd) {
+    padding-bottom: 8px;
+}
+
+.content-item a {
+    text-decoration: none;
+    padding: 16px;
+    color: rgba(255, 255, 255, 1.0);
+    background-color: rgba(0, 0, 0, 0.8);
+    display: inline-block
+}
+
+.content-item a:last-child {
+    margin-top: 24px;
+    transition: .7s;
+}
+
+.content-item a:hover {
+    background-color: rgba(0, 177, 106, 1.0);
+}

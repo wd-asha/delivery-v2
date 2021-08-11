@@ -1,0 +1,304 @@
+.services,
+.service,
+.rate,
+.rates,
+.promo,
+.promos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    margin: 0 auto;
+    max-width: 1200px;
+    transition: .7s;
+    padding: 0 1rem 1rem 1rem;
+}
+
+.rates,
+.service {
+    padding: 0 1rem 3rem 1rem;
+}
+
+.services-item,
+.service-item,
+.rate-item,
+.rates-item,
+.promo-item,
+.promos-item {
+    width: 33.333333%;
+    padding: 2rem 2rem 5.5rem 2rem;
+    background-color: rgba(0, 100, 0, .1);
+    transition: .5s;
+    position: relative;
+    cursor: default;
+    border: 1px solid white;
+}
+
+.rates-item {
+    width: 25%;
+}
+
+.service-item {
+    width: 50%;
+}
+
+.services-item:nth-child(1),
+.service-item:nth-child(1),
+.rate-item:nth-child(1),
+.rates-item:nth-child(1),
+.promo-item:nth-child(1),
+.promos-item:nth-child(1) {
+    background-color: transparent;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.services-item:nth-child(1) h6,
+.service-item:nth-child(1) h6,
+.rate-item:nth-child(1) h6,
+.rates-item:nth-child(1) h6,
+.promo-item:nth-child(1) h6,
+.promos-item:nth-child(1) h6 {
+    font-size: 2.4rem;
+    padding: 3rem 0 2rem 0;
+    color: darkgreen;
+}
+
+.services-item-last,
+.rate-item-last,
+.promo-item-last,
+.promos-item-last {
+    width: 33.333333%;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+}
+
+.services-item-last a,
+.rate-item-last a,
+.promo-item-last a {
+    display: block;
+    background-color: rgba(0, 177, 106, 1.0);
+    color: white;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    text-align: center;
+    width: 100%;
+    text-decoration: none;
+    transition: .5s;
+}
+
+.services-item-last a:hover,
+.rate-item-last a:hover,
+.promo-item-last a:hover {
+    background-color: darkgreen;
+}
+
+.services-item h5,
+.service-item h5,
+.rate-item h5,
+.rates-item h5 {
+    color: darkgreen;
+    font-size: 1.8rem;
+    line-height: 2rem;
+    margin: 0 0 1rem 0;
+    display: inline-block;
+}
+.promo-item h5,
+.promos-item h5 {
+    color: darkgreen;
+    font-size: 1.5rem;
+    line-height: 1.6rem;
+    margin: 0 0 1rem 0;
+    display: inline-block;
+}
+
+.services-item p,
+.service-item p,
+.rate-item p,
+.rates-item p,
+.promo-item p,
+.promos-item p {
+    font-size: 1rem;
+    line-height: 1.4rem;
+    color: darkgreen;
+}
+
+.rates-item p,
+.service-item p {
+    margin-bottom: .5rem;
+}
+
+.services-item p:last-child,
+.service-item p:last-child,
+.rate-item p:last-child,
+.rates-item p:last-child,
+.promo-item p:last-child,
+.promos-item p:last-child {
+    text-align: right;
+    position: absolute;
+    bottom: 2.5rem;
+    right: 2rem;
+}
+
+.services-item p:last-child a,
+.service-item p:last-child a,
+.rate-item p:last-child a,
+.rates-item p:last-child a,
+.promo-item p:last-child a,
+.promos-item p:last-child a {
+    background-color: rgba(0, 177, 106, 1.0);
+    color: white;
+    font-size: 1.1rem;
+    transition: .5s;
+    text-decoration: none;
+    padding: 1rem;
+}
+
+.services-item p:last-child a:hover,
+.service-item p:last-child a:hover,
+.rate-item p:last-child a:hover,
+.rates-item p:last-child a:hover,
+.promo-item p:last-child a:hover,
+.promos-item p:last-child a:hover {
+    background-color: darkgreen;
+}
+
+.service-item ul {
+    margin-left: 1rem;
+}
+
+.service-item ul li {
+    font-size: 1rem;
+    color: darkgreen;
+    line-height: 1.4rem;
+    margin-bottom: .25rem;
+}
+
+@media only screen and (max-width : 1200px) {
+    .services-item,
+    .service-item,
+    .rate-item,
+    .rates-item,
+    .promo-item,
+    .promos-item {
+        padding:
+                calc(1.5rem + (2 - 1.5) * ((100vw - 17.77rem) / (75 - 17.77)))
+                calc(1.5rem + (2 - 1.5) * ((100vw - 17.77rem) / (75 - 17.77)))
+                calc(4.5rem + (5.5 - 4.5) * ((100vw - 17.77rem) / (75 - 17.77)))
+                calc(1.5rem + (2 - 1.5) * ((100vw - 17.77rem) / (75 - 17.77)));
+    }
+    .services-item h5,
+    .service-item h5,
+    .rate-item h5,
+    .rates-item h5,
+    .promo-item h5,
+    .promos-item h5 {
+        font-size: calc(1.4rem + (1.8 - 1.4) * ((100vw - 17.77rem) / (75 - 17.77)));
+        margin:
+                0
+                0
+                calc(.66rem + (1 - .66) * ((100vw - 17.77rem) / (75 - 17.77)))
+                0;
+    }
+    .services-item p:last-child,
+    .service-item p:last-child,
+    .rate-item p:last-child,
+    .rates-item p:last-child,
+    .promo-item p:last-child,
+    .promos-item p:last-child {
+        bottom: calc(1.5rem + (2.5 - 1.5) * ((100vw - 17.77rem) / (75 - 17.77)));
+        right: calc(1.5rem + (2 - 1.5) * ((100vw - 17.77rem) / (75 - 17.77)));
+    }
+    .services-item p:last-child a,
+    .service-item p:last-child a,
+    .rate-item p:last-child a,
+    .rates-item p:last-child a,
+    .promo-item p:last-child a,
+    .promos-item p:last-child a {
+        font-size: calc(1rem + (1.1 - 1) * ((100vw - 17.77rem) / (75 - 17.77)));
+        padding: calc(.66rem + (1 - .66) * ((100vw - 17.77rem) / (75 - 17.77)));
+    }
+    .services-item-last a,
+    .service-item-last a,
+    .rate-item-last a,
+    .rates-item-last a,
+    .promo-item a,
+    .promos-item a {
+        padding-top: calc(.66rem + (1 - .66) * ((100vw - 17.77rem) / (75 - 17.77)));
+        padding-bottom: calc(.66rem + (1 - .66) * ((100vw - 17.77rem) / (75 - 17.77)));
+    }
+
+    .services-item:nth-child(1) h6,
+    .service-item:nth-child(1) h6,
+    .rate-item:nth-child(1) h6,
+    .rates-item:nth-child(1) h6,
+    .promo-item:nth-child(1) h6,
+    .promos-item:nth-child(1) h6 {
+        font-size: calc(2rem + (2.4 - 2) * ((100vw - 17.77rem) / (75 - 17.77)));
+        padding:
+                calc(1.5rem + (3 - 1.5) * ((100vw - 17.77rem) / (75 - 17.77))) 0
+                calc(1rem + (2 - 1) * ((100vw - 17.77rem) / (75 - 17.77))) 0;
+    }
+
+    .services-item p,
+    .service-item p,
+    .rate-item p,
+    .rates-item p,
+    .promo-item p,
+    .promos-item p {
+        line-height: calc(1.25rem + (1.4 - 1.25) * ((100vw - 17.77rem) / (75 - 17.77)));
+    }
+
+    .services-item-last,
+    .service-item-last,
+    .rate-item-last,
+    .rates-item-last,
+    .promo-item-last,
+    .promos-item-last {
+        margin-bottom: calc(.5rem + (2 - .5) * ((100vw - 17.77rem) / (75 - 17.77)));
+    }
+
+    .rates-item {
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width : 970px) {
+    .services-item {
+        width: 50%;
+    }
+    .rate-item,
+    .promo-item {
+        width: 100%;
+    }
+    .promos-item {
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width : 700px) {
+    .service-item {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width : 600px) {
+    .services-item {
+        width: 100%;
+    }
+    .promos-item {
+        width: 100%;
+    }
+    .rates-item {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width : 400px) {
+    .services-item-last,
+    .rate-item-last,
+    .promo-item-last {
+        width: 100%;
+    }
+}

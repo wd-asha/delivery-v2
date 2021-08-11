@@ -1,0 +1,185 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Akrobat-Regular', Arial, sans-serif;
+    outline: none;
+    font-size: 18px
+}
+
+#toTop {
+    border: .5rem solid darkgreen;
+    color: darkgreen;
+    text-align: center;
+    position: fixed;
+    bottom: 10%;
+    right: 2%;
+    cursor: pointer;
+    display: none;
+    font-weight: 600;
+    height: 3rem;
+    width: 3rem;
+    font-size: 2rem;
+    line-height: 1rem;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, .7);
+    opacity: .5;
+    transition: .5s;
+}
+
+#toTop:hover {
+    background-color: darkgreen;
+    color: rgba(255, 255, 255, 1.0);
+}
+
+span.simple-link {
+    padding: 0;
+    color: rgba(102, 0, 0, .7);
+    cursor: pointer;
+    transition: .7s;
+    text-decoration: underline;
+}
+
+span.simple-link:hover {
+    color: rgba(102, 0, 0, 1);
+}
+
+.copyright {
+    background-color: rgba(0, 0, 0, .8);
+}
+
+.copyright a {
+    padding: 0;
+    font-size: .8rem;
+    color: white;
+    text-decoration: none;
+    transition: .5s;
+}
+
+.copyright a:hover {
+    opacity: .8;
+}
+
+.about-bg {
+    background-color: rgba(255, 204, 102, .15);
+}
+
+.about {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem 2.5rem 1rem;
+}
+
+.about h2 {
+    font-size: 2.4rem;
+    color: rgba(102, 0, 0, .8);
+    padding: 2rem 0 2rem 0;
+}
+
+.about p {
+    padding-bottom: .5rem;
+    font-size: 1rem;
+    line-height: 1.4rem;
+    color: rgba(102, 0, 0, 1);
+}
+
+.about p.advice {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: rgba(102, 0, 0, 1);
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    letter-spacing: .03rem;
+    opacity: .8;
+    cursor: pointer;
+    transition: .5s;
+    border-top: 2px solid rgba(102, 0, 0, .2);
+}
+.about p.advice:hover {
+    color: rgba(102, 0, 0, .7);
+}
+
+.about p.advice i {
+    margin-left: .25rem;
+    color: rgba(102, 0, 0, .66);
+    font-size: 1rem;
+    font-weight: 300;
+    transition: .7s;
+}
+
+.about p.advice-first {
+    border-top: none;
+}
+
+.about .contvice p:last-child {
+    padding-bottom: 2rem;
+}
+
+.about a {
+    background-color: rgba(102, 0, 0, .5);
+    color: white;
+    font-size: 1.1rem;
+    transition: .5s;
+    text-decoration: none;
+    padding: 1rem;
+    display: inline-block;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.about a:hover {
+    background-color: rgba(102, 0, 0, .7);
+}
+
+.about ul {
+    padding-left: 2rem;
+    padding-bottom: 1rem;
+}
+
+.rotated {
+    transform: rotate(180deg);
+}
+
+@media only screen and (max-width : 1200px) {
+    .about {
+        padding: 0 1rem calc(1.5rem + (2.5 - 1.5) * ((100vw - 17.77rem) / (75 - 17.77))) 1rem;
+    }
+
+    .about h2 {
+        font-size: calc(1.4rem + (2.4 - 1.4) * ((100vw - 17.77rem) / (75 - 17.77)));
+        padding:
+                calc(1.5rem + (2 - 1.5) * ((100vw - 17.77rem) / (75 - 17.77))) 0
+                calc(1rem + (2 - 1) * ((100vw - 17.77rem) / (75 - 17.77))) 0;
+    }
+
+    .about p {
+        padding-bottom: calc(.25rem + (.5 - .25) * ((100vw - 17.77rem) / (75 - 17.77)));
+        line-height: calc(1.25rem + (1.4 - 1.25) * ((100vw - 17.77rem) / (75 - 17.77)));
+    }
+
+    .about p.advice {
+        font-size: calc(1rem + (1.1 - 1) * ((100vw - 17.77rem) / (75 - 17.77)));
+        padding-bottom: calc(.66rem + (1 - .66) * ((100vw - 17.77rem) / (75 - 17.77)));
+    }
+
+    .about p.bordered {
+        margin-bottom: calc(1.5rem + (2 - 1.5) * ((100vw - 17.77rem) / (75 - 17.77)));
+    }
+
+    .about a {
+        font-size: calc(1rem + (1.1 - 1) * ((100vw - 17.77rem) / (75 - 17.77)));
+        padding: calc(.66rem + (1 - .66) * ((100vw - 17.77rem) / (75 - 17.77)));
+        margin-bottom: calc(0rem + (1 - 0) * ((100vw - 17.77rem) / (75 - 17.77)));
+    }
+
+    .about ul {
+        padding-left: calc(1rem + (2 - 1) * ((100vw - 17.77rem) / (75 - 17.77)));
+    }
+}

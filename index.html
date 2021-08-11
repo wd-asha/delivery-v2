@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Delivery service | Cлужба доставки</title>
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link href="css/main.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="nav-mobile" id="navMobile">
+    <ul>
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="#services">Услуги</a></li>
+        <li><a href="#promo">Акции</a></li>
+        <li><a href="#rate">Тарифы</a></li>
+        <li><a href="tara.html">Упаковка</a></li>
+        <li><a href="#advice">Помощь</a></li>
+    </ul>
+    <div class="close-mobile" id="closeMobile">
+        <i class="fa fa-times"></i>
+    </div>
+</div>
+
+<div class="header-adr-phone">
+    <div class="header-adr-phone-item">
+        <p>
+            <i class="fa fa-envelope-o myfa"></i>
+            <span class="phone">delivery@gmail.com</span>
+        </p>
+    </div>
+    <div class="header-adr-phone-item">
+        <p>
+            <i class="fa fa-map-marker myfa"></i>
+            <span class="adr">Уфа, пр.Октября, 17</span>
+        </p>
+    </div>
+    <div class="header-adr-phone-item">
+        <p>
+            <i class="fa fa-phone myfa"></i>
+            <span class="phone">8 347 229-4236</span>
+        </p>
+    </div>
+</div>
+   
+<div class="header">
+    <div class="header-logo-menu">
+        <div class="logo">
+            <a href="index.html"><span class="big-logo">DELIVERY</span><br><span class="small-logo">SERVICE</span></a>
+        </div>
+        <nav>
+            <ul class="menu">
+                <li class="menu-item"><a href="index.html" class="active">Главная</a></li>
+                <li class="menu-item"><a href="#services">Услуги</a></li>
+                <li class="menu-item"><a href="#promo">Акции</a></li>
+                <li class="menu-item"><a href="#rate">Тарифы</a></li>
+                <li class="menu-item"><a href="tara.html">Упаковка</a></li>
+                <li class="menu-item"><a href="#advice">Помощь</a></li>
+            </ul>
+        </nav>
+        <div id="burger">
+            <div class="burger-inner">
+                <span></span>
+                <span class="central-span"></span>
+                <span></span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="slider-bg">
+    <div class="slider-wrapper">
+        <div class="slider">
+            <div>
+                <img src="images/slide-1-1920-min.jpg">
+                <div class="slide-txt">
+                    <h3>Заключите договор<br>онлайн и</h3>
+                    <h3>пользуйтесь<br>службой доставки</h3>
+                    <a href="#">Заказать сейчас</a>
+                </div>
+            </div>
+            <div>
+                <img src="images/slide-2-1920-min.jpg">
+                <div class="slide-txt">
+                    <h3>Нужно<br>доставить сегодня?</h3>
+                    <h3>Доставка<br>в тот же день</h3>
+                    <a href="#">Заказать сейчас</a>
+                </div>
+            </div>
+            <div>
+                <img src="images/slide-3-1920-min.jpg">
+                <div class="slide-txt">
+                    <h3>Обслуживание<br>Интернет-магазинов</h3>
+                    <h3>Заказ доставки<br>онлайн</h3>
+                    <a href="#">Заказать сейчас</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="express">
+<div class="express-box">
+    <div class="express-menu">
+
+        <div class="express-tab" brige="price" id="tabPrice">
+            <i class="fa fa-calculator"></i>
+            <p class="express-item-title">Расчитать<br>стоимость</p>
+        </div>
+
+        <div class="express-tab" brige="curier" id="tabCurier">
+            <i class="fa fa-phone"></i>
+            <p class="express-item-title">Вызвать<br>курьера&ensp;&ensp;&ensp;&ensp;</p>
+        </div>
+
+        <div class="express-tab" brige="tara" id="tabTara">
+            <i class="fa fa-gift"></i>
+            <p class="express-item-title">Подготовить<br>груз&ensp;&ensp;&ensp;</p>
+        </div>
+
+        <div class="express-tab active-tab" brige="track" id="tabTrack">
+            <i class="fa fa-binoculars"></i>
+            <p class="express-item-title">Отследить<br>доставку&ensp;</p>
+        </div>
+
+    </div>
+
+    <div class="express-desc">
+
+        <div class="express-text" id="textPrice" brige="price">
+            <h4>Расчитать стоимость</h4>
+            <form method="post" id="calc-form">
+                <input type="text" placeholder="Откуда (город, улица, дом)" title="Откуда (город, улица, дом)">
+                <input type="text" placeholder="Куда (город, улица, дом)" title="Куда (город, улица, дом)">
+                <input type="text" placeholder="Вес">
+                <button type="submit">Вычислить</button>
+            </form>
+        </div>
+
+        <div class="express-text" id="textCurier" brige="curier">
+            <h4>Вызвать курьера</h4>
+            <form method="post" id="curier-form">
+                <input type="text" placeholder="Адрес">
+                <input type="text" placeholder="Вес">
+                <input type="text" placeholder="Упаковка (конверт, пакет, коробка)" title="Упаковка (конверт, пакет, коробка)">
+                <button type="submit">Вызвать</button>
+            </form>
+        </div>
+
+        <div class="express-text" id="textTara" brige="tara">
+            <h4>Подготовить груз</h4>
+            <p>Вы можете использовать собственную упаковку или воспользоваться нашей фирменной: конверты, пакеты, тубусы, коробки. Предоставляем различную по размеру и материалу упаковку.</p>
+            <a href="#">Подробнее об упаковке</a>
+        </div>
+
+        <div class="express-text" id="textTrack" brige="track">
+            <h4>Отследить доставку</h4>
+            <p>Введите в поле номер отправления</p>
+            <form method="post" id="track-form">
+                <input type="text" value="159238746614">
+                <button type="submit">Найти</button>
+            </form>
+            <p class="finish">Доставлено адресату 19.05.2021 12:15</p>
+        </div>
+
+    </div>
+</div>
+
+<div class="express-box2">
+
+    <div class="express-menu">
+
+        <div class="express-tab2" brige="contract" id="expressContract">
+            <i class="fa fa-file-text"></i>
+            <p class="express-item-title">Заключить<br>договор&ensp;&ensp;</p>
+        </div>
+
+        <div class="express-tab2" brige="point" id="expressPoint">
+            <i class="fa fa-map-marker"></i>
+            <p class="express-item-title">Пункты<br>выдачи&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;</p>
+        </div>
+
+        <div class="express-tab2" brige="login" id="expressLogin">
+            <i class="fa fa-user"></i>
+            <p class="express-item-title">Личный<br>кабинет&ensp;&ensp;&ensp;&ensp;&ensp;</p>
+        </div>
+
+        <div class="express-tab2 active-tab" brige="phone" id="expressPhone">
+            <i class="fa fa-phone"></i>
+            <p class="express-item-title">Заказать<br>звонок&ensp;&ensp;&ensp;&ensp;</p>
+        </div>
+
+    </div>
+
+    <div class="express-desc">
+
+        <div class="express-text2" id="textPhone" brige="phone">
+            <h4>Заказать звонок</h4>
+            <form method="post" id="phone-form">
+                <input type="text" placeholder="Ваше имя">
+                <input type="text" placeholder="Когда позвонить">
+                <input type="text" placeholder="Ваш телефон">
+                <button type="submit">Жду звонка</button>
+            </form>
+        </div>
+
+        <div class="express-text2" id="textContract" brige="contract">
+            <h4>Заключить договор</h4>
+            <p>Чтобы заключить договор с нами необходимо заполнить заявку. Менеджер Delivery Service свяжется с Вами в течение дня и обсудит все условия сотрудничества.</p>
+            <a href="#">Заполнить заявку</a>
+        </div>
+
+        <div class="express-text2" id="textLogin" brige="login">
+            <h4>Личный кабинет</h4>
+            <form method="post" id="login-form">
+                <input type="text" placeholder="Ваш e-mail">
+                <input type="text" placeholder="Пароль">
+                <input class="input-link" type="text" value="Регистрация">
+                <button type="submit">Войти</button>
+            </form>
+        </div>
+
+        <div class="express-text2" id="textPoint" brige="point">
+            <h4>Пункты выдачи</h4>
+            <form method="post" id="point-form">
+                <input type="text" placeholder="Ваш населенный пункт" title="Ваш населенный пункт">
+                <button type="submit">Найти</button>
+                <div class="point-list"></div>
+            </form>
+        </div>
+
+    </div>
+</div>
+</div>
+
+<div class="about-bg">
+<div class="about">
+    <h2 class="about-title">Курьерская служба доставки Delivery Service</h2>
+    <p>Компания Delivery Service осуществляет курьерскую доставку грузов и корреспонденции по Республике Башкортостан. Результат нашей работы – доверие более 7 тысяч постоянных клиентов и репутация надежного, ответственного партнера.</p>
+    <p>Экспресс-доставка по Республике выполняется в срок от 3 часов до 1 дня.</p>
+    <p>Delivery Service оказывает полный спектр услуг, который включает: доставку почтовых отправлений, документов, посылок и грузов, страхование грузов, ответственное хранение.</p>
+    <p>Открытая в 2003 году, Delivery Service стала одной из первых курьерских служб на рынке Башкортастана, а сегодня является одним из ведущих операторов логистических услуг. Сеть филиалов насчитывает более 30 отделений в различных регионах республики. Мы постоянно расширяем штат курьеров и транспортный парк, автоматизируем процессы, оптимизируем логистические маршруты и внедряем новые IT-технологии. Непрерывное развитие компании нацелено на увеличение скорости и повышение качества услуг курьерской доставки.</p>
+    <p>Высокий уровень сервиса — результат работы отлаженного механизма, в котором каждый процесс строго выверен. Ежедневно компания выполняет свыше 300 заказов на доставку по Уфе и более 700 курьерских доставок по всей Республике.</p>
+    <p>Delivery Service имеет лицензию на оказание почтовых услуг, и входит в Ассоциацию негосударственных операторов почтовой связи (АНОПС). С 14 марта 2010 года - член Гильдии логистических операторов торгово-промышленной палаты РФ.</p>
+    <a href="#">Стать клиентом</a>
+</div>
+</div>
+
+<div class="services" id="services">
+    <div class="services-item">
+        <h6>Наши услуги</h6>
+    </div>
+    <div class="services-item">
+        <h5>Эконом-доставка</h5>
+        <p>Услуга предназначена для тех, кому важно осуществить отправку документов, корреспонденции, посылок или малогабаритных грузов при этом не отвлекаясь от своих дел.  Единственное, что необходимо сделать, — это вызвать курьера. Компания предоставляет услуги эконом-доставки «из рук в руки», то есть отправление будет доставлено из рук отправителя в руки получателя.</p>
+        <p><a href="#">Заказать</a></p>
+    </div>
+    <div class="services-item">
+        <h5>Доставка ко времени</h5>
+        <p>Ускоренный сервис, позволяющий планировать рабочее время не только клиентов-отправителей, но и клиентов-получателей, поскольку отправление прибудет к определённому времени в указанный день. Также данный вид услуги подойдет для тех, чьи бизнес-процессы встроены в четкие временные рамки. Например, когда необходимо передать документы к определенному времени на совещание или для участия в тендере.</p>
+        <p><a href="#">Заказать</a></p>
+    </div>
+    <div class="services-item">
+        <h5>Почтовый офис</h5>
+        <p>Для оптимизации бизнес-процессов клиентам с большим штатом сотрудников и значительным объемом отправок компания Delivery Service предлагает услугу «Почтовый офис». Это предоставление специально обученного сотрудника, который на территории клиента осуществляет ряд действий по обработке исходящей и входящей корреспонденции.</p>
+        <p><a href="#">Заказать</a></p>
+    </div>
+    <div class="services-item">
+        <h5>Интернет-магазины</h5>
+        <!--<p>За время работы компания создала масштабную логистическую сеть по всей республике Башкортостан, благодаря чему может гарантировать, что отправление будет доставлено покупателю в заявленные сроки. Обязательным условием при этом является оповещение получателя о прибытии посылки и доставка ее в удобное для него время.</p>-->
+        <p>Организация доставки для интернет-магазинов – комплексная задача. Необходимо своевременно отправлять большое количество заказов, контролировать их сохранность, быструю доставку получателям, обеспечивать возврат денежных средств. Delivery Service предлагает готовое решение для интернет-магазинов. Включая отправку sms-уведомлений покупателям о дате и времени прибытии заказа, а также повышенную ответственность за товар.</p>
+        <p><a href="#">Заказать</a></p>
+    </div>
+    <div class="services-item">
+        <h5>Цветы и подарки</h5>
+        <p>Наша компания может приятно удивить партнеров по бизнесу, друзей или родственников клиентов в любом городе, где представлена компания.  Воспользовавшись услугой «Доставка цветов и подарков», можно сделать сюрприз своим близким в праздничный день. В назначенный день наш сотрудник доставит букет или подарок по указанному адресу.</p>
+        <p><a href="#">Заказать</a></p>
+    </div>
+    <div class="services-item">
+        <h5>Дополнительно</h5>
+        <p>Понимая, что большая часть отправлений — это важные документы, которые несут определенную ценность, а значит, требуют особого статуса отправлений, нами был разработан целый спектр дополнительных услуг: доставка в нерабочее время, переадресация отправления, повторная доставка, объявленная ценность, доставка уведомления о вручении, доставка лично в руки, хранение отправлений, страхование грузов.</p>
+        <p><a href="#">Заказать</a></p>
+    </div>
+    <div class="services-item-last">
+        <a href="services.html">Все услуги</a>
+    </div>
+</div>
+
+
+<div class="time-line-bg">
+<div class="time-line">
+    <div class="time-line-item">
+        <h5>Начать<br>отправлять<br>просто</h5>
+        <h5>Начать отправлять просто</h5>
+    </div>
+    <div class="time-line-item">
+        <h6>1</h6>
+        <div class="time-line-link">
+            <p>Расчитать стоимость</p>
+            <a href="#">Калькулятор</a>
+        </div>
+    </div>
+    <div class="time-line-item">
+        <h6>2</h6>
+        <div class="time-line-link">
+            <p>Вызвать курьера</p>
+            <a href="#">Позвонить</a>
+        </div>
+    </div>
+    <div class="time-line-item">
+        <h6>3</h6>
+        <div class="time-line-link">
+            <p>Подготовить груз</p>
+            <a href="tara.html">Об упаковке</a>
+        </div>
+    </div>
+</div>
+</div>
+
+<div class="rate" id="rate">
+    <div class="rate-item">
+        <h6>Наши тарифы</h6>
+    </div>
+    <div class="rate-item">
+        <h5>Эконом</h5>
+        <p>Доставка от офиса до офиса нашей компании. Доставка до места — самовывоз клиентом. Срок доставки до офиса нашей компании — в течении 24 часов. Доставка только по рабочим дням</p>
+        <p><a href="#">Расчитать</a></p>
+    </div>
+    <div class="rate-item">
+        <h5>Оптима</h5>
+        <p>Доставка до клиента. Срок доставки — в течении 48 часов. Доставка в любой день (включая выходные и праздники). Вы можете воспользоваться этим тарифом в том случае, если есть необходимость в надежной услуге, но сроки еще не поджимают</p>
+        <p><a href="#">Расчитать</a></p>
+    </div>
+    <div class="rate-item">
+        <h5>Экспресс</h5>
+        <p>Срочная доставка как документов, так и грузов до клиента в максимально короткие сроки. Доставка в любой день (включая выходные и праздники)</p>
+        <p><a href="#">Расчитать</a></p>
+    </div>
+    <div class="rate-item-last">
+        <a href="rate.html">Все тарифы</a>
+    </div>
+</div>
+
+<div class="time-line-bg">
+    <div class="time-line">
+        <div class="time-line-item">
+            <h5>Догвор с<br>Delivery Service</h5>
+            <h5>Догвор с Delivery Service</h5>
+        </div>
+        <div class="time-line-item">
+            <h6>1</h6>
+            <div class="time-line-link">
+                <p>Заполнить форму</p>
+                <a href="#">Начать работу</a>
+            </div>
+        </div>
+        <div class="time-line-item">
+            <h6>2</h6>
+            <div class="time-line-link">
+                <p>Подтвердить e-mail<br>для проверки данных</p>
+            </div>
+        </div>
+        <div class="time-line-item">
+            <h6>3</h6>
+            <div class="time-line-link">
+                <p>Получить данные<br>для авторизации в ЛК</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="promo" id="promo">
+    <div class="promo-item">
+        <h6>Наши акции</h6>
+    </div>
+    <div class="promo-item">
+        <h5>Скидка 5% на первый заказ для новых клиентов</h5>
+        <p>Ищете надежного и выгодного партнера по курьерской доставке? Если вы еще не являетесь нашим клиентом, воспользуйтесь специальным предложением — скидка 5% на первый заказ!</p>
+        <p><a href="#">Выбрать</a></p>
+    </div>
+    <div class="promo-item">
+        <h5>Выгодные условия в офисах компании</h5>
+        <p>Теперь получить дополнительную выгоду стало проще: приносите ваше отправление в наш офис, приходите забрать его в нашем офисе самостоятельно — и получайте скидку на заказ до 10%!</p>
+        <p><a href="#">Выбрать</a></p>
+    </div>
+    <div class="promo-item">
+        <h5>Доставка документов в ВУЗы</h5>
+        <p>Отправляйте документы в приемную комиссию быстро и надежно! Специально для абитуриентов проводим ежегодную акцию — доставка документов в ВУЗы всего за 500 рублей!</p>
+        <p><a href="#">Выбрать</a></p>
+    </div>
+    <div class="promo-item-last">
+        <a href="promo.html">Все акции</a>
+    </div>
+</div>
+
+<div class="about-bg" id="advice">
+    <div class="about">
+        <h2 class="about-title">Наши советы</h2>
+        <p class="advice advice-first">
+            Хотите отправить груз и можете привезти его сами
+            <i class="fa fa-chevron-down"></i>
+        </p>
+        <div class="contvice">
+            <p>Если Вы хотите отправить груз и можете привезти его сами, то груз нужно привезти по адресу офиса Delivery Service в вашем населенном пункте.</p>
+            <p>У водителя должны быть реквизиты отправителя, получателя груза и плательщика, также их контактные телефоны. Отправитель должен предоставить следующие документы на груз: товарная накладная, товарно-транспортная накладная, счет-фактура и сертификаты (если товар сертифицируется).</p>
+        </div>
+        <p class="advice">
+            Забор груза автомобилями нашей компанией
+            <i class="fa fa-chevron-down"></i>
+        </p>
+        <div class="contvice">
+            <p>Вы можете заказать забор груза автомобилями нашей компанией. Для этого необходимо заполнить заявку (<span class="simple-link">скачать бланк</span>) или заполнить <span class="simple-link">on-line заявку</span>. После этого отправить ее по электронной почте или факсу с подписью и печатью. Заявки принимаются к исполнению на следующий день после ее поступления.</p>
+        </div>
+        <p class="advice advice">
+            Как стать клиентом и заключить договор&nbsp;
+            <i class="fa fa-chevron-down"></i>
+        </p>
+        <div class="contvice">
+            <p>Стать клиентом Delivery Service очень просто! Позвоните по телефону 8 347 229-4236 и сообщите свои данные – ФИО, название компании, ИНН/КПП. Оператор зарегистрирует Вас и предоставит Индивидуальный клиентский номер. После чего Вы сможете оформлять заказы и пользоваться другими дополнительными услугами.</p>
+        </div>
+        <p class="advice">
+            Что такое клиентский номер и как его узнать&nbsp;
+            <i class="fa fa-chevron-down"></i>
+        </p>
+        <div class="contvice">
+            <p>Это уникальный идентификационный номер, который присваивается при регистрации клиента в базе компании City Express и используется при оформлении заказов, а также для предоставления клиенту данных об отправках и другой необходимой информации.</p>
+            <p>Узнать клиентский номер и номер договора можно, обратившись к вашему персональному менеджеру. Вам нужно будет предоставить персональные данные (для физических лиц) или номер ИНН/название компании (для юридических лиц). Если Вы зарегистрированы в Личном кабинете, клиентский номер можно посмотреть в разделе «Мой профиль».</p>
+        </div>
+        <a href="advice.html">Все советы</a>
+    </div>
+</div>
+
+<div class="footer-bg">
+<div class="footer">
+    <div class="footer-item">
+        <ul>
+            <li>Виды упаковки</li>
+            <li>Заключить договор</li>
+            <li>Скачать прайс-лист</li>
+        </ul>
+    </div>
+    <div class="footer-item">
+        <ul>
+            <li>Допустимый вес груза</li>
+            <li>Консультация специалиста</li>
+            <li>Требования к отправителям</li>
+        </ul>
+    </div>
+    <div class="footer-item">
+        <ul>
+            <li>Сборные грузы</li>
+            <li>Возврат доставки</li>
+            <li>Объявленная ценность</li>
+        </ul>
+    </div>
+</div>
+<div class="footer2">
+    <div class="footer-item">
+        <ul>
+            <li>Виды<br>упаковки</li>
+            <li>Заключить<br>договор</li>
+            <li>Скачать<br>прайс-лист</li>
+        </ul>
+    </div>
+    <div class="footer-item">
+        <ul>
+            <li>Допустимый<br>вес груза</li>
+            <li>Консультация<br>специалиста</li>
+            <li>Требования к<br>отправителям</li>
+        </ul>
+    </div>
+    <div class="footer-item">
+        <ul>
+            <li>Сборные<br>грузы</li>
+            <li>Возврат<br>доставки</li>
+            <li>Объявленная<br>ценность</li>
+        </ul>
+    </div>
+</div>
+</div>
+
+<div class="copyright"><a href="http://wd-asha.ru">&copy; wd-asha</a></div>
+
+<div id="toTop">
+    <i class="fa fa-angle-double-up"></i>
+</div>
+
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/jquery.bxslider.js"></script>
+
+<script>
+  $(document).ready(function(){
+
+    $('.slider').bxSlider({
+        speed: '1000'
+    });
+
+    let expressText = $('.express-text');
+    let expressText2 = $('.express-text2');
+    let expressTab = $('.express-tab');
+    let expressTab2 = $('.express-tab2');
+      let advice = $('.advice');
+      let contvice = $('.contvice');
+
+      contvice.each(function() {
+          $(this).slideUp(100);
+      })
+      advice.on('click', function() {
+          $(this).next(contvice).slideToggle(600);
+          $(this).children('.fa').toggleClass('rotated');
+      })
+
+    $('#textTrack').show(100);
+    $('#textPhone').show(100);
+
+    expressTab.on('click', function(e) {
+        e.preventDefault();
+        let data = $(this).attr('brige');
+        expressText.each(function () {
+            if($(this).attr('brige') !== data) {
+                $(this).hide(100)
+            }else{
+                $(this).show(600)
+            }
+        });
+        expressTab.each(function () {
+            $(this).removeClass("active-tab")
+        });
+        $(this).addClass("active-tab");
+    });
+
+    expressTab2.on('click', function(e) {
+      e.preventDefault();
+      let data = $(this).attr('brige');
+      expressText2.each(function () {
+          if($(this).attr('brige') !== data) {
+              $(this).hide(100)
+          }else{
+              $(this).show(600)
+          }
+      });
+        expressTab2.each(function () {
+            $(this).removeClass("active-tab")
+        });
+        $(this).addClass("active-tab");
+    })
+
+  });
+</script>
+
+<!-- Скрол наверх -->
+<script>
+    $(function() {
+        $(window).scroll(function() {
+            if($(this).scrollTop() > 200) {
+                $('#toTop').fadeIn();
+            } else {
+                $('#toTop').fadeOut();
+            }
+        });
+        $('#toTop').click(function() {
+            $('body, html').animate({scrollTop:0},800);
+        });
+    });
+</script>
+
+<script>
+    $('#burger').click(function () {
+        let
+            navMobile = $('.nav-mobile'),
+            navMobileLi = $('.nav-mobile ul li a');
+
+            navMobile.css({'display': 'block', 'width': '66%'});
+            setTimeout(function() {
+                navMobileLi.css('opacity', 1);
+            }, 400);
+        });
+
+    $('#closeMobile').click(function () {
+        let
+            navMobile = $('.nav-mobile'),
+            navMobileLi = $('.nav-mobile ul li a');
+
+        navMobileLi.css('opacity', 0);
+        setTimeout(function() {
+            navMobile.css('width', 0);
+        }, 400);
+        setTimeout(function() {
+            navMobileLi.css('opacity', 0);
+            navMobile.css('display', 'none');
+        }, 1000)
+    });
+</script>
+
+</body>
+</html>
