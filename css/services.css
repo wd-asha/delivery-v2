@@ -74,12 +74,32 @@
     margin-top: 1rem;
 }
 
-.services-item-last a,
-.rate-item-last a,
 .promo-item-last a {
     display: block;
-    background-color: rgba(0, 177, 106, 1.0);
-    color: white;
+    color: darkgreen;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    text-align: center;
+    width: 100%;
+    text-decoration: none;
+    transition: .5s;
+}
+
+.rate-item-last a {
+    display: block;
+    color: darkgreen;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    text-align: center;
+    width: 100%;
+    text-decoration: none;
+    transition: .5s;
+}
+
+.services-item-last a {
+    display: block;
+    background-color: transparent;
+    color: darkgreen;
     padding-top: 1rem;
     padding-bottom: 1rem;
     text-align: center;
@@ -91,7 +111,7 @@
 .services-item-last a:hover,
 .rate-item-last a:hover,
 .promo-item-last a:hover {
-    background-color: darkgreen;
+    color: rgba(0, 177, 106, 1.0);
 }
 
 .services-item h5,
